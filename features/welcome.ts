@@ -1,4 +1,5 @@
 import { Client, TextChannel } from "discord.js";
+import sendEvent from '../index';
 
 const welcomeData = {} as {
 
@@ -26,9 +27,10 @@ export default (client: Client) => {
           dateJoin: new Date(),
           guildMembersAmmount: res.size
         }
-        console.log(joinData)      
-        const channel = guild.channels.cache.get('973296979331416124') as TextChannel
-        data = welcomeData[guild.id] = [channel, 'Welcome @ to the server. @.']
+        // console.log(joinData)      
+        sendEvent(joinData)
+        // const channel = guild.channels.cache.get('973296979331416124') as TextChannel
+        // data = welcomeData[guild.id] = [channel, 'Welcome @ to the server. @.']
       }
   
       console.log('User joined channel at ' + new Date())
