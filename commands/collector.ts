@@ -23,7 +23,8 @@ export default {
     message.react('👍')
 
     const filter = (reaction: MessageReaction, user: User) => {
-      console.log(user.username)
+      console.log('user', user)
+      console.log('reaction', reaction)
       return user.id === message.author.id
     }
 

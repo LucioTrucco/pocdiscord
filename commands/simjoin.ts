@@ -6,7 +6,7 @@ export default{
   slash: 'both',
 
   callback: ({member,client}) => {
-    client.emit('guildMemberAdd',member)
+    // client.emit('guildMemberAdd',member)
     return 'Join stimulated'
   }
 

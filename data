@@ -1,0 +1,190 @@
+// Data when user joins 
+
+Guild {
+  id: '302942833113825283',
+  name: 'BOKITA PAPA',
+  icon: '379c9c302eb6bbd53ceada0684a1871c',
+  features: [],
+  commands: <ref *1> GuildApplicationCommandManager {
+    permissions: ApplicationCommandPermissionsManager {
+      manager: [Circular *1],
+      guild: [Circular *2],
+      guildId: '302942833113825283',
+      commandId: null
+    },
+    guild: [Circular *2]
+  },
+  members: GuildMemberManager { guild: [Circular *2] },
+  channels: GuildChannelManager { guild: [Circular *2] },
+  bans: GuildBanManager { guild: [Circular *2] },
+  roles: RoleManager { guild: [Circular *2] },
+  presences: PresenceManager {},
+  voiceStates: VoiceStateManager { guild: [Circular *2] },
+  stageInstances: StageInstanceManager { guild: [Circular *2] },
+  invites: GuildInviteManager { guild: [Circular *2] },
+  scheduledEvents: GuildScheduledEventManager { guild: [Circular *2] },
+  available: true,
+  shardId: 0,
+  splash: null,
+  banner: null,
+  description: null,
+  verificationLevel: 'NONE',
+  vanityURLCode: null,
+  nsfwLevel: 'DEFAULT',
+  discoverySplash: null,
+  memberCount: 58,
+  large: true,
+  premiumProgressBarEnabled: false,
+  applicationId: null,
+  afkTimeout: 300,
+  afkChannelId: null,
+  systemChannelId: null,
+  premiumTier: 'NONE',
+  premiumSubscriptionCount: 0,
+  explicitContentFilter: 'DISABLED',
+  mfaLevel: 'NONE',
+  joinedTimestamp: 1651857459064,
+  defaultMessageNotifications: 'ALL_MESSAGES',
+  systemChannelFlags: SystemChannelFlags { bitfield: 0 },
+  maximumMembers: 500000,
+  maximumPresences: null,
+  approximateMemberCount: null,
+  approximatePresenceCount: null,
+  vanityURLUses: null,
+  rulesChannelId: null,
+  publicUpdatesChannelId: null,
+  preferredLocale: 'ru',
+  ownerId: '264573318722617344',
+  emojis: GuildEmojiManager { guild: [Circular *2] },
+  stickers: GuildStickerManager { guild: [Circular *2] }
+}
+
+// Data when user sends a message
+
+Message {
+  channelId: '973193082386391040',
+  guildId: '302942833113825283',
+  id: '974691176663904326',
+  createdTimestamp: 1652454885403,
+  type: 'DEFAULT',
+  system: false,
+  content: 'test',
+  author: User {
+    id: '264573318722617344',
+    bot: false,
+    system: false,
+    flags: UserFlags { bitfield: 0 },
+    username: 'PeinateCarlos',
+    discriminator: '5614',
+    avatar: '232559e4b097f79d86c07edf85ffdb07',
+    banner: undefined,
+    accentColor: undefined
+  },
+  pinned: false,
+  tts: false,
+  nonce: '974691175208321024',
+  embeds: [],
+  components: [],
+  attachments: Collection(0) [Map] {},
+  stickers: Collection(0) [Map] {},
+  editedTimestamp: null,
+  reactions: ReactionManager { message: [Circular *1] },
+  mentions: MessageMentions {
+    everyone: false,
+    users: Collection(0) [Map] {},
+    roles: Collection(0) [Map] {},
+    _members: null,
+    _channels: null,
+    crosspostedChannels: Collection(0) [Map] {},
+    repliedUser: null
+  },
+  webhookId: null,
+  groupActivityApplication: null,
+  applicationId: null,
+  activity: null,
+  flags: MessageFlags { bitfield: 0 },
+  reference: null,
+  interaction: null
+}  
+
+// User information
+
+user User {
+  id: '264573318722617344',
+  bot: false,
+  system: false,
+  flags: UserFlags { bitfield: 0 },
+  username: 'PeinateCarlos',
+  discriminator: '5614',
+  avatar: '232559e4b097f79d86c07edf85ffdb07',
+  banner: undefined,
+  accentColor: undefined
+}
+
+// Reaction information 
+
+reaction <ref *2> MessageReaction {
+  message: <ref *1> Message {
+    channelId: '847295589515001896',
+    guildId: '302942833113825283',
+    id: '974709538844471386',
+    createdTimestamp: 1652459263288,
+    type: 'DEFAULT',
+    system: false,
+    content: '!collector',
+    author: User {
+      id: '264573318722617344',
+      bot: false,
+      system: false,
+      flags: [UserFlags],
+      username: 'PeinateCarlos',
+      discriminator: '5614',
+      avatar: '232559e4b097f79d86c07edf85ffdb07',
+      banner: undefined,
+      accentColor: undefined
+    },
+    pinned: false,
+    tts: false,
+    nonce: '974709537401470976',
+    embeds: [],
+    components: [],
+    attachments: Collection(0) [Map] {},
+    stickers: Collection(0) [Map] {},
+    editedTimestamp: null,
+    reactions: ReactionManager { message: [Circular *1] },
+    mentions: MessageMentions {
+      everyone: false,
+      users: Collection(0) [Map] {},
+      roles: Collection(0) [Map] {},
+      _members: null,
+      _channels: null,
+      crosspostedChannels: Collection(0) [Map] {},
+      repliedUser: null
+    },
+    webhookId: null,
+    groupActivityApplication: null,
+    applicationId: null,
+    activity: null,
+    flags: MessageFlags { bitfield: 0 },
+    reference: null,
+    interaction: null
+  },
+  me: true,
+  users: ReactionUserManager { reaction: [Circular *2] },
+  _emoji: ReactionEmoji {
+    animated: false,
+    name: '👍',
+    id: null,
+    reaction: [Circular *2]
+  },
+  count: 2
+}
+
+// Interaction information
+This occurs when a user uses a / command, for example, if i have a bot that is able to send me a pong message when i type /ping, the interaction would be a
+pong string
+
+
+
+
+

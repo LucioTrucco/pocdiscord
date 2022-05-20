@@ -11,10 +11,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-firehose": "^3.95.0",
+    "@aws-sdk/client-kinesis": "^3.94.0",
+    "aws-kinesis-producer": "^1.0.3",
+    "aws-sdk": "^2.1138.0",
     "axios": "^0.27.2",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
+    "firehoser": "^1.3.6",
+    "moment": "^2.29.3",
     "nodemon": "^2.0.16",
+    "path": "^0.12.7",
+    "pg": "^8.7.3",
     "wokcommands": "^1.5.3"
   }
 }
