@@ -59,7 +59,6 @@ client.on('messageCreate', async (msg) => {
     bot: msg.author.bot,
     username: msg.author.username,
     discriminator: msg.author.discriminator,
-    dateJoin: new Date()
   }
   let messageData = {
     channelId: msg.channelId,
@@ -79,7 +78,6 @@ client.on('messageReactionAdd', (reaction) => {
     bot: reaction?.message?.author?.bot,
     username: reaction?.message?.author?.username,
     discriminator: reaction?.message?.author?.discriminator,
-    dateJoin: new Date()
   }
   let emojiReaction = {
     name: reaction.emoji.name,
